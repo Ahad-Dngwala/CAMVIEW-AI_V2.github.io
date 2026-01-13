@@ -35,7 +35,7 @@ graph TD
     end
 
     subgraph "Presentation Layer (Streamlit)"
-        JSON -->|Read (Polling)| DB[Dashboard UI]
+        JSON -->|Read Polling| DB[Dashboard UI]
         UP -->|Get Latest Frame| DB
         DB -->|Render| V[Live Preview]
         DB -->|Render| C[Analytics Charts]
